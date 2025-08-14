@@ -84,10 +84,10 @@ body {
     margin: 30px auto;
     border-radius: 10px;
     overflow-y: auto;
+    overflow-x: hidden;
     scrollbar-gutter: stable;
     box-shadow: 0 10px 50px rgba(0,0,0,1);
     position: relative;
-    max-height: 500px;
 }
 
 .flex-row {
