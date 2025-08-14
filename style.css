@@ -48,6 +48,7 @@ body {
     color: #ffffff;
     align-items: center;
     flex-direction: column;
+    cursor: default; 
     text-decoration: none; 
 }
 
