@@ -1,4 +1,3 @@
-/* --- RESET Y CONFIGURACIÓN GENERAL --- */
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +14,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1c1c1c;
     line-height: 1.6;
-    color: #ecf0f1;
+    color: #ffffff;
 }
 
 /* --- ENCABEZADO --- */
 .main-header {
     background-color: #2e2e2e;
-    color: #ecf0f1;
+    color: #ffffff;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -44,6 +43,14 @@ body {
     text-decoration: none; 
 }
 
+.link-oculto {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none; 
+}
+
 .poli-logo {
     height: 100px;
     transition: transform 0.3s ease;
@@ -52,7 +59,7 @@ body {
 .subtitulo {
     font-size: 1em;
     font-weight: 300;
-    color: #ecf0f1;
+    color: #ffffff;
     margin-top: 10px;
     text-decoration: none;
 }
@@ -127,7 +134,7 @@ body {
 
 .profile-pic:hover {
     filter: grayscale(100%);
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 
