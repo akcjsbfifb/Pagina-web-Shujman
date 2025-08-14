@@ -13,14 +13,14 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #1c1c1c;
     line-height: 1.6;
-    color: #333;
+    color: #ecf0f1;
 }
 
 /* encabezado */
 .main-header {
-    background-color: #2c3e50;
+    background-color: #2e2e2e;
     color: #ecf0f1;
     padding: 15px 30px;
     display: flex;
@@ -30,14 +30,20 @@ body {
 }
 
 .main-title {
-    font-size: 1.8em;
-    font-weight: 600;
+    font-size: 4em;
+    font-weight: 200;
+    font-style: normal;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
 }
 
 .poli-logo {
     height: 100px;
+    border: 3px solid #f12711;
+    padding: 5px;
     transition: transform 0.3s ease;
 }
+
 
 /* animacion */
 @keyframes shake {
@@ -49,6 +55,7 @@ body {
 }
 
 .poli-logo:hover {
+    transform: scale(1.1);
     animation: shake 0.5s ease-in-out infinite;
 }
 
@@ -58,18 +65,20 @@ body {
     margin: 30px auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 50px rgba(0,0,0,1);
+    position: relative;
 }
+
 
 .flex-row {
     display: flex;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #4e4e4e;
     transition: background-color 0.3s;
 }
 
 .flex-row.header {
-    background-color: #3498db;
-    color: white;
+    background-color: #f12711;
+    color: #2c3e50;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -79,7 +88,7 @@ body {
 }
 
 .flex-row:hover:not(.header) {
-    background-color: #f8f9fa;
+    background-color: #3a3a3a;
     transform: scale(1.01);
 }
 
@@ -96,7 +105,7 @@ body {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #e0e0e0;
+    border: 3px solid #f12711;
     transition: all 0.3s ease;
 }
 
@@ -109,7 +118,7 @@ body {
 
 /* pie de pagina */
 footer {
-    background: #2c3e50;
+    background: #2e2e2e;
     color: #ecf0f1;
     text-align: center;
     padding: 20px;
