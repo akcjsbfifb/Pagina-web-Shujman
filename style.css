@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* encabezado */
+.main-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-title {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.poli-logo {
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+/* animacion */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.poli-logo:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+/* tabla */
+.flex-table {
+    width: 95%;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.flex-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.flex-row.header {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.flex-row:last-child {
+    border-bottom: none;
+}
+
+.flex-row:hover:not(.header) {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+.flex-cell {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+/* degradado de grises */
+.profile-pic:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+/* pie de pagina */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
