@@ -118,9 +118,14 @@ body {
 
 /* pie de pagina */
 footer {
+    margin-top: auto;
     background: #2e2e2e;
     color: #ecf0f1;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    font-style: normal;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: 200;
 }
