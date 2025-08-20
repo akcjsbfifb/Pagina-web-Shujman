@@ -190,9 +190,9 @@ footer {
         overflow: hidden;
     }
 
-    /*.flex-row.header {*/
-    /*    display: none; /* oculto cabecera en móvil */*/
-    /*}*/
+    .flex-row.header {
+        display: none; /* oculto cabecera en móvil */
+    }
 
     .flex-cell {
         justify-content: center;
