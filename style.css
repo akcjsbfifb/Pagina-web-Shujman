@@ -152,3 +152,67 @@ footer {
     font-size: 2em;
     font-weight: 200;
 }
+/* marto: */
+@media (max-width: 768px) {
+    /* encabezado */
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .main-title {
+        font-size: 2em; /* más chico en móvil */
+        margin-bottom: 10px;
+    }
+
+    .poli-logo {
+        height: 70px; /* más chico en móvil */
+    }
+
+    .subtitulo {
+        font-size: 0.9em;
+    }
+
+    /* tabla */
+    .flex-table {
+        width: 100%;
+        margin: 15px auto;
+        box-shadow: none;
+    }
+
+    .flex-row {
+        flex-direction: column; /* cada persona en tarjeta */
+        align-items: stretch;
+        margin-bottom: 15px;
+        border: 1px solid #4e4e4e;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /*.flex-row.header {*/
+    /*    display: none; /* oculto cabecera en móvil */*/
+    /*}*/
+
+    .flex-cell {
+        justify-content: center;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .flex-cell img {
+        margin: 10px auto;
+    }
+
+    /* imágenes de perfil */
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* pie de página */
+    footer {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
